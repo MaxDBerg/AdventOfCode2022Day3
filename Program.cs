@@ -32,7 +32,7 @@ namespace AdventOfCode2022Day3
         }
         public static void Problem1(int points, int index)
         {
-            foreach (string line in File.ReadLines(@"C:\Users\maxda\OneDrive\Skrivbord\AOC2022Day3.txt"))
+            foreach (string line in File.ReadLines(@"input.txt"))
             {
                 List<char> Bag1 = new List<char>();
 
@@ -73,7 +73,7 @@ namespace AdventOfCode2022Day3
             List<char> Bag2 = new List<char>();
             List<char> Bag3 = new List<char>();
 
-            foreach (string line in File.ReadLines(@"C:\Users\maxda\OneDrive\Skrivbord\AOC2022Day3.txt"))
+            foreach (string line in File.ReadLines(@"input.txt"))
             {
                 if (bag == 1) { Bag1 = line.ToList(); } else if (bag == 2) { Bag2 = line.ToList(); } else if (bag == 3) { Bag3 = line.ToList(); }
                 bag++;
